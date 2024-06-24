@@ -29,7 +29,7 @@ def recommend_similar_books(book_id, top_n=5):
     return similar_indices
 
 # 读取数据集
-dataset = pd.read_csv('book_douban.csv')
+dataset = pd.read_csv(r'图书/regression_model2_1.h5')
 
 def validate_input(user_id, book_id):
     if user_id < 0 or user_id >= user_embedding_matrix.shape[0]:
