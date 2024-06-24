@@ -9,7 +9,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 warnings.filterwarnings('ignore')  # 忽略告警
 
 # 加载模型
-model = tf.keras.models.load_model('regression_model2_1.h5')
+model = tf.keras.models.load_model(r'图书/regression_model2_1.h5')
 book_embedding_matrix = model.get_layer('Book-Embedding').get_weights()[0]
 user_embedding_matrix = model.get_layer('User-Embedding').get_weights()[0]
 
