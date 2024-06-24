@@ -29,7 +29,7 @@ def recommend_similar_books(book_id, top_n=5):
     return similar_indices
 
 # 读取数据集
-dataset = pd.read_csv(r'图书/regression_model2_1.h5')
+dataset = pd.read_csv(r'图书/book_douban.csv')
 
 def validate_input(user_id, book_id):
     if user_id < 0 or user_id >= user_embedding_matrix.shape[0]:
@@ -49,7 +49,7 @@ def recommend_books_by_rating(rating):
     return recommended_books
 
 # 读取数据集
-data = pd.read_csv('book_douban.csv')
+data = pd.read_csv(r'图书/book_douban.csv')
 
 # 确保数据集中包含书名、作者和出版日期列
 required_columns = ['title', 'author', '出版时间']
