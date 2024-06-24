@@ -1,6 +1,5 @@
 streamlit
 tensorflow
 pandas
-warnings
 jieba
 scikit-learn
